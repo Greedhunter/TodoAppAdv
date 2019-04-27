@@ -10,7 +10,7 @@ import UIKit
 
 class ViewController: UITableViewController {
     
-    let itemArray = ["milk", "whatecer"]
+    var itemArray = ["milk", "whatecer"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -32,5 +32,23 @@ class ViewController: UITableViewController {
         
         tableView.deselectRow(at: indexPath, animated: true)
     }
+    @IBAction func addButtonPressed(_ sender: UIBarButtonItem) {
+        var textField = UITextField()
+        
+        let alert = UIAlertController(title: "Add To Do Category", message: "", preferredStyle: .alert)
+        let action = UIAlertAction(title: "Add Category", style: .default) { (action) in
+            self.itemArray.append(textField.text!)
+            self.tableView.reloadData()
+        }
+        alert.addTextField { (alertTextField) in
+            alertTextField.placeholder = "Create new Category"
+            textField = alertTextField
+        }
+        alert.addAction(action)
+        
+        present(alert, animated: true, completion: nil)
+    }
 }
+
+
 
