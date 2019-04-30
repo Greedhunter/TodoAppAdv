@@ -10,11 +10,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "TodoAppAdv/Control/ViewController.swift"
-            timestampString = "578342917.715075"
+            timestampString = "578355901.484622"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "12"
-            endingLineNumber = "12"
+            startingLineNumber = "13"
+            endingLineNumber = "13"
             landmarkName = "ViewController"
             landmarkType = "3">
             <Locations>
@@ -26,7 +26,7 @@
                   moduleName = "TodoAppAdv"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/jack/Desktop/TodoAppAdv/TodoAppAdv/Control/ViewController.swift"
-                  timestampString = "578341972.325145"
+                  timestampString = "578346645.695714"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "0"
@@ -34,19 +34,19 @@
                   offsetFromSymbolStart = "12">
                </Location>
                <Location
-                  shouldBeEnabled = "No"
+                  shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
                   symbolName = "TodoAppAdv.ViewController.init(style: __C.UITableViewStyle) -&gt; TodoAppAdv.ViewController"
                   moduleName = "TodoAppAdv"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/jack/Desktop/TodoAppAdv/TodoAppAdv/Control/ViewController.swift"
-                  timestampString = "578341972.331704"
+                  timestampString = "578346645.699735"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "13"
                   endingLineNumber = "13"
-                  offsetFromSymbolStart = "129">
+                  offsetFromSymbolStart = "86">
                </Location>
                <Location
                   shouldBeEnabled = "No"
@@ -56,7 +56,7 @@
                   moduleName = "TodoAppAdv"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/jack/Desktop/TodoAppAdv/TodoAppAdv/Control/ViewController.swift"
-                  timestampString = "578341972.334553"
+                  timestampString = "578346645.702951"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "0"
@@ -64,19 +64,19 @@
                   offsetFromSymbolStart = "12">
                </Location>
                <Location
-                  shouldBeEnabled = "No"
+                  shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
                   symbolName = "TodoAppAdv.ViewController.init(nibName: Swift.Optional&lt;Swift.String&gt;, bundle: Swift.Optional&lt;__C.NSBundle&gt;) -&gt; TodoAppAdv.ViewController"
                   moduleName = "TodoAppAdv"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/jack/Desktop/TodoAppAdv/TodoAppAdv/Control/ViewController.swift"
-                  timestampString = "578341972.337254"
+                  timestampString = "578346645.706038"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "13"
                   endingLineNumber = "13"
-                  offsetFromSymbolStart = "181">
+                  offsetFromSymbolStart = "172">
                </Location>
                <Location
                   shouldBeEnabled = "No"
@@ -86,7 +86,7 @@
                   moduleName = "TodoAppAdv"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/jack/Desktop/TodoAppAdv/TodoAppAdv/Control/ViewController.swift"
-                  timestampString = "578341972.340726"
+                  timestampString = "578346645.709707"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "0"
@@ -94,19 +94,19 @@
                   offsetFromSymbolStart = "12">
                </Location>
                <Location
-                  shouldBeEnabled = "No"
+                  shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
                   symbolName = "TodoAppAdv.ViewController.init(coder: __C.NSCoder) -&gt; Swift.Optional&lt;TodoAppAdv.ViewController&gt;"
                   moduleName = "TodoAppAdv"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/jack/Desktop/TodoAppAdv/TodoAppAdv/Control/ViewController.swift"
-                  timestampString = "578341972.3431391"
+                  timestampString = "578346645.713576"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "13"
                   endingLineNumber = "13"
-                  offsetFromSymbolStart = "129">
+                  offsetFromSymbolStart = "86">
                </Location>
                <Location
                   shouldBeEnabled = "No"
@@ -116,7 +116,7 @@
                   moduleName = "TodoAppAdv"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/jack/Desktop/TodoAppAdv/TodoAppAdv/Control/ViewController.swift"
-                  timestampString = "578341972.345561"
+                  timestampString = "578346645.716529"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "0"

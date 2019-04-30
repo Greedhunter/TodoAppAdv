@@ -8,9 +8,11 @@
 
 import UIKit
 import CoreData
+import SwipeCellKit
 
 class ViewController: UITableViewController {
     let context = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
+    @IBOutlet weak var searchBar: UISearchBar!
     var itemArray = [Item]()
     var selectedCategory: Categories? {
         didSet{
@@ -20,6 +22,13 @@ class ViewController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        tableView.rowHeight = 75
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        guard let navBar = navigationController?.navigationBar else { fatalError("navbar does now exisst!")}
+        title = selectedCategory?.name
+        
     }
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -27,8 +36,13 @@ class ViewController: UITableViewController {
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "todoItemCell", for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "todoItemCell", for: indexPath) as! SwipeTableViewCell
         cell.textLabel?.text = itemArray[indexPath.row].title
+        if let colour = UIColor.flatSkyBlue().darken(byPercentage: CGFloat(indexPath.row)/CGFloat(itemArray.count)){
+            cell.backgroundColor = colour
+            cell.textLabel?.textColor = UIColor(contrastingBlackOrWhiteColorOn: colour, isFlat:true)
+        }
+        cell.delegate = self
         
         if itemArray[indexPath.row].done == true {
             cell.accessoryType = .checkmark
@@ -124,4 +138,27 @@ extension ViewController: UISearchBarDelegate {
 }
 
 
-
+extension ViewController: SwipeTableViewCellDelegate {
+    func tableView(_ tableView: UITableView, editActionsForRowAt indexPath: IndexPath, for orientation: SwipeActionsOrientation) -> [SwipeAction]? {
+        guard orientation == .right else { return nil }
+        
+        let deleteAction = SwipeAction(style: .destructive, title: "Delete") { action, indexPath in
+            let selected = self.itemArray[indexPath.row]
+            self.context.delete(selected)
+            self.saveData()
+            self.loadItems()
+            print("item delected")
+        }
+        
+        // customize the action appearance
+        deleteAction.image = UIImage(named: "Delete Icon")
+        
+        return [deleteAction]
+    }
+    
+    func tableView(_ tableView: UITableView, editActionsOptionsForRowAt indexPath: IndexPath, for orientation: SwipeActionsOrientation) -> SwipeOptions {
+        var options = SwipeOptions()
+        options.expansionStyle = .destructive
+        return options
+    }
+}
